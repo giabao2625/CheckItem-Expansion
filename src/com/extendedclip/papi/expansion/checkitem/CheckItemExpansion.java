@@ -542,11 +542,11 @@ public class CheckItemExpansion extends PlaceholderExpansion implements Configur
         data += item.getItemMeta().getDisplayName() + " &r";
       }
       if (wrapper.shouldCheckType()) {
-        data = multiMod ? data += "mat:" : "";
+        data = multiMod ? data += "";
         data += item.getType() + " &r";
       }
       if (wrapper.shouldCheckAmount()) {
-        data = multiMod ? data += "amt:" : "";
+        data = multiMod ? data +="";
         data += item.getAmount() + " &r";
       }
       if (wrapper.shouldCheckDurability()) {
